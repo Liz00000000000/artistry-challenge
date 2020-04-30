@@ -1,0 +1,10 @@
+<%= form_for @play do |p| %> 
+
+<%= p.label :artist_id %> 
+<%=p.collection_select :artist_id, Artist.all, :id, :name %> 
+<br>
+<%= p.label :instrument_id %> 
+<%=p.collection_select :instrument_id, Instrument.all, :id, :name %> 
+<br>
+<%=p.submit %> 
+<%end%> 

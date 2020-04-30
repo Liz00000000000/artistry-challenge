@@ -1,0 +1,7 @@
+<h1>Instruments Index </h1>
+
+<ul>
+    <% @instruments.each do |inst| %>
+    <li><%= link_to inst.name, instrument_path(inst)%> || <%= link_to inst.classification, instrument_path(inst) %></li>
+<%end%>
+</ul>

@@ -8,3 +8,7 @@ Instrument.create(name: "Guitar", classification: "Strings")
 Instrument.create(name: "Violin", classification: "Strings")
 Instrument.create(name: "Flute", classification: "Woodwind")
 Instrument.create(name: "Xylophone", classification: "Percussion")
+
+5.times do 
+Play.create(artist_id: Artist.all.sample.id, instrument_id: Instrument.all.sample.id)
+end 
